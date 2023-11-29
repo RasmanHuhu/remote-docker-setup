@@ -32,6 +32,8 @@ services:
       - "traefik.http.routers.europe.rule=Host(`europe.dear-domi.dk`)"
       - "traefik.http.routers.europe.entrypoints=websecure"
       - "traefik.http.routers.europe.tls.certresolver=myresolver"
+    ports:
+      - "3000:3000"
 
 
 
